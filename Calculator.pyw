@@ -72,7 +72,7 @@ def create_buttons(window, btn_width=5, btn_height=2, btn_bg="lavender", btn_fg=
     plus.grid(column=3, row=4)
 
     point = Button(window, text=" . ", width=btn_width, height=btn_height, border=1,
-                  bg=btn_bg, fg=btn_fg, command=lambda: insert(answer, "."))
+                   bg=btn_bg, fg=btn_fg, command=lambda: insert(answer, "."))
     point.grid(column=0, row=5)
 
     equal = Button(window, text=" = ", width=btn_width*2+1, height=btn_height, border=1,
@@ -80,7 +80,7 @@ def create_buttons(window, btn_width=5, btn_height=2, btn_bg="lavender", btn_fg=
     equal.grid(columnspan=2, column=1, row=5)
 
     modulus = Button(window, text=" % ", width=btn_width, height=btn_height, border=1,
-                     bg=btn_bg, fg=btn_fg, command=lambda: insert(answer, "%") )
+                     bg=btn_bg, fg=btn_fg, command=lambda: insert(answer, "%"))
     modulus.grid(column=3, row=5)
     return window
 
