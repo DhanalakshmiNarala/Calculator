@@ -5,7 +5,7 @@ __author__ = "Dhanalakshmi Narala"
 from tkinter import *
 
 
-def create_buttons(window, btn_width=5, btn_height=2, btn_bg="lavender", btn_fg="red"):
+def create_buttons(window, btn_width=5, btn_height=2, btn_bg="lavender", btn_fg="darkblue"):
     """Creates buttons for calculator"""
 
     answer = Text(window, width=20, height=3)
@@ -106,9 +106,9 @@ def calculate_result(text):
 def app():
     root = Tk()
     root.title("Calculator")
-    root.geometry("200x280")
+    root.geometry("210x280")
     root.resizable(width=False, height=False)
-    root.configure(padx=12, pady=15, background='#ECEFF1')
+    root.configure(padx=15, pady=15, background='#ECEFF1')
     root = create_buttons(root)
     root.mainloop()
 
